@@ -2,3 +2,12 @@
 .settings/
 
 build/
+out/
+### idea ###
+.idea/
+target/
+
+### images ###
+*.jpg
+*.gif
+*.png

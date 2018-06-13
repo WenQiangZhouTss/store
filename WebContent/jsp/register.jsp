@@ -42,23 +42,12 @@ font {
 </style>
 </head>
 <body>
-
-
-
-
 	<%@ include file="/jsp/header.jsp"%>
-
-
-
-
 
 	<div class="container">
 		<div class="row">
 
 			<div class="col-md-2"></div>
-
-
-
 
 			<div class="col-md-8"
 				style="background: #fff; padding: 40px 80px; margin: 30px; border: 7px solid #ccc;">

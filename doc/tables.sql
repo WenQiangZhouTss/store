@@ -3,6 +3,7 @@
 use store;
 
 -- 创建用户表
+DROP TABLE `user` if exists;
 CREATE TABLE `user` (
   `uid` varchar(32) NOT NULL,  #用户编号
   `username` varchar(20) DEFAULT NULL,		#用户名

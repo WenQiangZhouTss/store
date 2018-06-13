@@ -1,4 +1,4 @@
-package store.domin;
+package store.domain;
 
 import java.util.Date;
 
