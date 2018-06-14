@@ -26,7 +26,7 @@ public class OrderServlet extends BaseServlet {
 	public String saveOrder(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		 //获取用户 session
-		User uu=(User)request.getSession().getAttribute("loginUser");
+		User uu=(User)request.getSession().getAttribute("user");
 		 //获取到购物车
 		Cart cart=(Cart)request.getSession().getAttribute("cart");
 		 //创建订单对象 
@@ -153,6 +153,11 @@ public class OrderServlet extends BaseServlet {
 		return null;
 	}
 	*/
+    public String payOrder(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        request.setAttribute("msg", "你已支付订单");
+        return "/jsp/info.jsp";
+    }
+
 	/*
 	public String callBack(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		

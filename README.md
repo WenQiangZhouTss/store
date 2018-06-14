@@ -1,15 +1,15 @@
 ## Java实现的网上商城
-项目基于jsp & servlet实现，包括完整的前后端
+项目基于Jsp & Servlet实现，包括完整的前后端
 
 ### 功能
 - 用户模块(user)：注册、登录、激活、信息修改、退出、记住我
 - 分类模块(category)： 增删查改
 - 商品模块(product)：分页展示
-- 订单模块(order)：增删查改
-- 购物车模块(cart): 增删查改
+- 订单模块(order)：支付网关
+- 购物车模块(cart): session的运用
 
 ### 依赖
-jdk1.7+和tomcat7+
+JDK1.7+和Tomcat 7+
 
 ### Demo
 
