@@ -88,4 +88,16 @@
         <url-pattern>/ProductServlet</url-pattern>
     </servlet-mapping>
 
+    <!-- 购物车模块 -->
+    <servlet>
+        <description></description>
+        <display-name>CartServlet</display-name>
+        <servlet-name>CartServlet</servlet-name>
+        <servlet-class>store.web.servlet.CartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CartServlet</servlet-name>
+        <url-pattern>/CartServlet</url-pattern>
+    </servlet-mapping>
+
 </web-app>

@@ -7,17 +7,17 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import cn.itcast.store.domain.Cart;
-import cn.itcast.store.domain.CartItem;
-import cn.itcast.store.domain.Order;
-import cn.itcast.store.domain.OrderItem;
-import cn.itcast.store.domain.User;
-import cn.itcast.store.service.OrderService;
-import cn.itcast.store.service.serviceImp.OrderServiceImp;
-import cn.itcast.store.utils.PageModel;
-import cn.itcast.store.utils.PaymentUtil;
-import cn.itcast.store.utils.UUIDUtils;
-import cn.itcast.store.web.base.BaseServlet;
+import store.domain.Cart;
+import store.domain.CartItem;
+import store.domain.Order;
+import store.domain.OrderItem;
+import store.domain.User;
+import store.service.OrderService;
+import store.service.serviceImp.OrderServiceImp;
+import store.utils.PageModel;
+// import store.utils.PaymentUtil;
+import store.utils.UUIDUtils;
+import store.web.base.BaseServlet;
 
 public class OrderServlet extends BaseServlet {
 
@@ -87,6 +87,7 @@ public class OrderServlet extends BaseServlet {
 		  //转发到订单详情页面order_info.jsp
 		return "/jsp/order_info.jsp";
 	}
+	/*
 	//payOrder
 	public String payOrder(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		//服务端获取到收货人姓名,电话,地址,订单编号,银行信息
@@ -151,7 +152,8 @@ public class OrderServlet extends BaseServlet {
 		//服务端重新定向到易宝支付,同时向易宝支付传递了数据
 		return null;
 	}
-	
+	*/
+	/*
 	public String callBack(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
 		// 验证请求来源和数据有效性
@@ -208,6 +210,6 @@ public class OrderServlet extends BaseServlet {
 				
 				return null;
 	}	
-	
+	*/
 	
 }

@@ -109,19 +109,5 @@
         document.getElementById("form1").submit();
     }
 
-    function submit02() {
-        //通过JS提交表单参数
-        document.getElementById("form1").method = "post";
-        document.getElementById("form1").action = "http://www.baidu.com";
-        document.getElementById("form1").submit();
-    }
-
-    function submit03() {
-        //通过JS提交表单参数
-        document.getElementById("form1").method = "post";
-        document.getElementById("form1").action = "http://www.51cto.com";
-        document.getElementById("form1").submit();
-    }
-
 </script>
 </html>

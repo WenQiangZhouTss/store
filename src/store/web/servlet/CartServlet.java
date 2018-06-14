@@ -3,21 +3,21 @@ package store.web.servlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import cn.itcast.store.domain.Cart;
-import cn.itcast.store.domain.CartItem;
-import cn.itcast.store.domain.Product;
-import cn.itcast.store.domain.User;
-import cn.itcast.store.service.ProductService;
-import cn.itcast.store.service.serviceImp.ProductServiceImp;
-import cn.itcast.store.utils.UUIDUtils;
-import cn.itcast.store.web.base.BaseServlet;
+import store.domain.Cart;
+import store.domain.CartItem;
+import store.domain.Product;
+import store.domain.User;
+import store.service.ProductService;
+import store.service.serviceImp.ProductServiceImp;
+import store.utils.UUIDUtils;
+import store.web.base.BaseServlet;
 
 public class CartServlet extends BaseServlet {
 
 	public String addToCart(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		//判断用户是否登录,没有登录跳转到login.jsp页面,提示:请登录后在购物
-		User uu=(User)request.getSession().getAttribute("loginUser");
+		User uu=(User)request.getSession().getAttribute("user");
 		if(null==uu){
 			request.setAttribute("msg", "请登录后在购买商品");
 			return "/jsp/login.jsp";

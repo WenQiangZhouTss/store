@@ -11,13 +11,13 @@ import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.MapListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
-import cn.itcast.store.dao.OrderDao;
-import cn.itcast.store.domain.Order;
-import cn.itcast.store.domain.OrderItem;
-import cn.itcast.store.domain.Product;
-import cn.itcast.store.domain.User;
-import cn.itcast.store.utils.JDBCUtils;
-import cn.itcast.store.utils.MyBeanUtils;
+import store.dao.OrderDao;
+import store.domain.Order;
+import store.domain.OrderItem;
+import store.domain.Product;
+import store.domain.User;
+import store.utils.JDBCUtils;
+import store.utils.MyBeanUtils;
 
 public class OrderDaoImp implements OrderDao {
 

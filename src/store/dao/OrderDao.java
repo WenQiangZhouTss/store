@@ -3,9 +3,9 @@ package store.dao;
 import java.sql.SQLException;
 import java.util.List;
 
-import cn.itcast.store.domain.Order;
-import cn.itcast.store.domain.OrderItem;
-import cn.itcast.store.domain.User;
+import store.domain.Order;
+import store.domain.OrderItem;
+import store.domain.User;
 
 public interface OrderDao {
 

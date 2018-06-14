@@ -2,14 +2,14 @@ package store.service.serviceImp;
 
 import java.util.List;
 
-import cn.itcast.store.dao.OrderDao;
-import cn.itcast.store.dao.daoImp.OrderDaoImp;
-import cn.itcast.store.domain.Order;
-import cn.itcast.store.domain.OrderItem;
-import cn.itcast.store.domain.User;
-import cn.itcast.store.service.OrderService;
-import cn.itcast.store.utils.JDBCUtils;
-import cn.itcast.store.utils.PageModel;
+import store.dao.OrderDao;
+import store.dao.daoImp.OrderDaoImp;
+import store.domain.Order;
+import store.domain.OrderItem;
+import store.domain.User;
+import store.service.OrderService;
+import store.utils.JDBCUtils;
+import store.utils.PageModel;
 
 public class OrderServiceImp implements OrderService {
 

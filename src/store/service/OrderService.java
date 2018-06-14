@@ -2,9 +2,9 @@ package store.service;
 
 import java.util.List;
 
-import cn.itcast.store.domain.Order;
-import cn.itcast.store.domain.User;
-import cn.itcast.store.utils.PageModel;
+import store.domain.Order;
+import store.domain.User;
+import store.utils.PageModel;
 
 public interface OrderService {
 
