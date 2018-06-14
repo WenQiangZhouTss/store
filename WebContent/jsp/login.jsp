@@ -42,8 +42,7 @@
 <%@ include file="/jsp/header.jsp" %>
 
 
-<div class="container"
-     style="width:100%;height:460px;background:#FF2C4C url('${pageContext.request.contextPath}/img/loginbg.jpg') no-repeat;">
+<div class="container">
     <div class="row">
         <div class="col-md-7">
             <!--<img src="image/login.jpg" width="500" height="330" alt="会员登录" title="会员登录">-->
@@ -60,7 +59,7 @@
                         <label for="username" class="col-sm-2 control-label">用户名</label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="username" placeholder="请输入用户名" name="username"
-                                   value="${remUser}"/>
+                                   value="${cookie.remUser.value}"/>
                             <input type="hidden" name="method" value="userLogin"/>
                         </div>
                     </div>

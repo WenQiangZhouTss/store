@@ -29,7 +29,7 @@ public class UserServlet extends BaseServlet {
     public String exists(HttpServletRequest request, HttpServletResponse response) throws Exception {
         String username = request.getParameter("username");
 
-        User user = null; // todo
+        User user = userService.findUserByUsreName(username); // todo
         if (user != null) {
             response.getWriter().print("1"); // 已经存在此用户
         } else {
@@ -71,10 +71,17 @@ public class UserServlet extends BaseServlet {
             // 登录成功
             request.getSession().setAttribute("user", user);
             String autoLogin = request.getParameter("autoLogin");
-            if ("yes".equals(autoLogin)) {
+            if ("yes".equals(autoLogin)) { // 自动登录
                 Cookie c = new Cookie("autoLogin", user.getUsername() + "#" + user.getPassword());
                 c.setPath(request.getContextPath());
                 c.setMaxAge(30 * 24 * 3600); // 一个月有效期
+                response.addCookie(c);
+            }
+            String rememberMe = request.getParameter("remUser");
+            if ("yes".equals(rememberMe)) { // 记住我
+                Cookie c = new Cookie("remUser", user.getUsername());
+                c.setPath(request.getContextPath());
+                c.setMaxAge(30 * 24 * 3600);
                 response.addCookie(c);
             }
 

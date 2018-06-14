@@ -31,14 +31,14 @@
 		</div>
 		<div class="col-md-3" style="padding-top: 20px">
 			<ol class="list-inline">
-				<c:if test="${empty loginUser }">
+				<c:if test="${empty user }">
 					<li><a
 						href="${pageContext.request.contextPath}/UserServlet?method=loginUI">登录</a></li>
 					<li><a
 						href="${pageContext.request.contextPath}/UserServlet?method=registerUI">注册</a></li>
 				</c:if>
-				<c:if test="${not empty loginUser }">
-					<li><a href="#">欢迎${loginUser.name }</a></li>
+				<c:if test="${not empty user }">
+					<li><a href="#">欢迎${user.name }</a></li>
 					<li><a
 						href="${pageContext.request.contextPath}/UserServlet?method=logOut">退出</a></li>
 					<li><a href="${pageContext.request.contextPath}/jsp/cart.jsp">购物车</a></li>
