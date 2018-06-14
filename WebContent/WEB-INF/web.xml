@@ -64,4 +64,28 @@
         <url-pattern>/UserServlet</url-pattern>
     </servlet-mapping>
 
+    <!-- 分类模块 -->
+    <servlet>
+        <description></description>
+        <display-name>CategoryServlet</display-name>
+        <servlet-name>CategoryServlet</servlet-name>
+        <servlet-class>store.web.servlet.CategoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CategoryServlet</servlet-name>
+        <url-pattern>/CategoryServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 商品模块 -->
+    <servlet>
+        <description></description>
+        <display-name>ProductServlet</display-name>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>store.web.servlet.ProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/ProductServlet</url-pattern>
+    </servlet-mapping>
+
 </web-app>
